@@ -2,8 +2,267 @@
   {
     "id": "SEM03_P01",
     "semana": 3,
-    "enunciado": "Ejemplo de problema para la Semana 3",
-    "requiere_grafica": false,
-    "observaciones": ""
+    "enunciado": "Calcular la integral: \\int \\frac{dx}{4x^2 + 4x + 10}",
+    "requiere_grafica": true,
+    "observaciones": "Completar cuadrados en el denominador 4(x + 1/2)^2 + 9 y aplicar la fórmula estándar de arctan o la sustitución x + 1/2 = (3/2)tan(theta)."
+  },
+  {
+    "id": "SEM03_P02",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(x-1)dx}{3x^2 - 4x + 3}",
+    "requiere_grafica": true,
+    "observaciones": "Completar cuadrados en el denominador irreducible y descomponer el numerador para generar la derivada del denominador (6x - 4) más el término en arctan."
+  },
+  {
+    "id": "SEM03_P03",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(2x-3)dx}{x^2 + 6x + 15}",
+    "requiere_grafica": true,
+    "observaciones": "Reescribir el numerador como (2x + 6) - 9 para separar en logaritmo natural y arctan tras completar cuadrados en (x + 3)^2 + 6."
+  },
+  {
+    "id": "SEM03_P04",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(2x+2)dx}{x^2 - 4x + 9}",
+    "requiere_grafica": true,
+    "observaciones": "Separar el numerador como (2x - 4) + 6. La primera parte se integra por sustitución u = x^2 - 4x + 9 y la segunda mediante arctan completando cuadrados."
+  },
+  {
+    "id": "SEM03_P05",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(2x-3)dx}{x^2 + 6x + 15}",
+    "requiere_grafica": true,
+    "observaciones": "Escribir el numerador como (2x + 6) - 9, resultando en (1/2)ln|x^2 + 6x + 15| y una integral tipo arctan."
+  },
+  {
+    "id": "SEM03_P06",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(x+2)dx}{x^2 + 2x + 2}",
+    "requiere_grafica": true,
+    "observaciones": "Descomponer el numerador en (x + 1) + 1. Expresar como (1/2)ln(x^2 + 2x + 2) + arctan(x + 1)."
+  },
+  {
+    "id": "SEM03_P07",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{xdx}{x^2 - 4x + 4}",
+    "requiere_grafica": true,
+    "observaciones": "Reescribir como x/(x - 2)^2. Aplicar fracciones parciales A/(x - 2) + B/(x - 2)^2 o la sustitución u = x - 2."
+  },
+  {
+    "id": "SEM03_P08",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(2x^2 + 3)dx}{x^3 - 2x^2 + x}",
+    "requiere_grafica": true,
+    "observaciones": "Factorizar como x(x - 1)^2 y descomponer en fracciones parciales A/x + B/(x - 1) + C/(x - 1)^2."
+  },
+  {
+    "id": "SEM03_P09",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(x^4 - 6x^3 + 12x^2 + 6)}{x^3 - 6x^2 + 12x - 8} dx",
+    "requiere_grafica": true,
+    "observaciones": "Realizar división polinómica previo a integrar. Notar que el denominador es (x - 2)^3 y aplicar descomposición del residuo."
+  },
+  {
+    "id": "SEM03_P10",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(x^3 + x^2 + x + 3)}{x^4 + 4x^2 + 3} dx",
+    "requiere_grafica": true,
+    "observaciones": "Factorizar el denominador como (x^2 + 1)(x^2 + 3) y aplicar fracciones parciales (Ax + B)/(x^2 + 1) + (Cx + D)/(x^2 + 3)."
+  },
+  {
+    "id": "SEM03_P11",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{x^4}{x^4 + 2x^2 + 1} dx",
+    "requiere_grafica": true,
+    "observaciones": "Dividir polinomios o expresar x^4 = (x^2 + 1)^2 - 2(x^2 + 1) + 1 para simplificar directamente sobre (x^2 + 1)^2."
+  },
+  {
+    "id": "SEM03_P12",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{x^4}{x^4 - 1} dx",
+    "requiere_grafica": true,
+    "observaciones": "Dividir polinomios. Factorizar el denominador x^4 - 1 = (x - 1)(x + 1)(x^2 + 1) y descomponer en tres fracciones parciales."
+  },
+  {
+    "id": "SEM03_P13",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(x^4 - 2x^3 + 3x^2 - x + 3)}{x^3 - 2x^2 + 3x} dx",
+    "requiere_grafica": true,
+    "observaciones": "Efectuar división algebraica y descomponer el residuo sobre x(x^2 - 2x + 3) en A/x + (Bx + C)/(x^2 - 2x + 3)."
+  },
+  {
+    "id": "SEM03_P14",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(x^5 + 2)}{x^2 - 1} dx",
+    "requiere_grafica": true,
+    "observaciones": "Dividir (x^5 + 2) entre (x^2 - 1) para obtener un cociente polinómico más la fracción residuo (x + 2)/(x^2 - 1)."
+  },
+  {
+    "id": "SEM03_P15",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{x^3}{x^2 - 2x - 3} dx",
+    "requiere_grafica": true,
+    "observaciones": "Realizar división de polinomios y factorizar el denominador como (x - 3)(x + 1) para el resto."
+  },
+  {
+    "id": "SEM03_P16",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{x^2 + 1}{x^3 + 1} dx",
+    "requiere_grafica": true,
+    "observaciones": "Factorizar la suma de cubos (x + 1)(x^2 - x + 1) y resolver mediante fracciones parciales."
+  },
+  {
+    "id": "SEM03_P17",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(x^2 + 6)}{(x - 1)^2 (x - 2)} dx",
+    "requiere_grafica": true,
+    "observaciones": "Plantear descomposición en fracciones parciales del tipo A/(x - 1) + B/(x - 1)^2 + C/(x - 2)."
+  },
+  {
+    "id": "SEM03_P18",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(x^2 - 1)}{(x^2 + 1)(x - 2)} dx",
+    "requiere_grafica": true,
+    "observaciones": "Descomponer en (Ax + B)/(x^2 + 1) + C/(x - 2) y determinar los coeficientes por igualdad de polinomios."
+  },
+  {
+    "id": "SEM03_P19",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{3x^2 + 2x - 2}{x^3 - 1} dx",
+    "requiere_grafica": true,
+    "observaciones": "Usar la factorización x^3 - 1 = (x - 1)(x^2 + x + 1) y resolver por fracciones parciales."
+  },
+  {
+    "id": "SEM03_P20",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{x^4 - x^3 - 2x^2 - x + 2}{(x - 1)(x^2 + 2)^2} dx",
+    "requiere_grafica": true,
+    "observaciones": "Planteamiento con cuadrático repetido: A/(x - 1) + (Bx + C)/(x^2 + 2) + (Dx + E)/(x^2 + 2)^2. Aplicar x = sqrt(2)tan(theta) en la potencia cuadrada."
+  },
+  {
+    "id": "SEM03_P21",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(2x^2 - 7x - 1)}{x^3 + x^2 - x - 1} dx",
+    "requiere_grafica": true,
+    "observaciones": "Factorizar el denominador agrupando términos como (x + 1)^2 (x - 1) y descomponer en fracciones parciales."
+  },
+  {
+    "id": "SEM03_P22",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(3x^2 + 3x + 1)}{x^3 + 2x^2 + 2x + 1} dx",
+    "requiere_grafica": true,
+    "observaciones": "Factorizar como (x + 1)(x^2 + x + 1) y resolver por fracciones parciales A/(x + 1) + (Bx + C)/(x^2 + x + 1)."
+  },
+  {
+    "id": "SEM03_P23",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{x^3 + 7x^2 - 5x + 5}{(x - 1)^2 (x^2 + 1)^2} dx",
+    "requiere_grafica": true,
+    "observaciones": "Descomponer con factores lineales y cuadráticos repetidos: A/(x-1) + B/(x-1)^2 + (Cx+D)/(x^2+1) + (Ex+F)/(x^2+1)^2. Resolver este último término usando x = tan(theta)."
+  },
+  {
+    "id": "SEM03_P24",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{2x}{(x^2 + x + 1)^2} dx",
+    "requiere_grafica": true,
+    "observaciones": "Completar cuadrados en el denominador ((x + 1/2)^2 + 3/4)^2 y aplicar la sustitución trigonométrica x + 1/2 = (sqrt(3)/2)tan(theta)."
+  },
+  {
+    "id": "SEM03_P25",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(x^2 + 2x + 3)}{x^3 - x} dx",
+    "requiere_grafica": true,
+    "observaciones": "Factorizar denominador x(x - 1)(x + 1) y aplicar suma de tres fracciones parciales simples."
+  },
+  {
+    "id": "SEM03_P26",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(2x^2 - 3x + 5)}{(x + 2)(x - 1)(x - 3)} dx",
+    "requiere_grafica": true,
+    "observaciones": "Descomposición directa en tres fracciones parciales A/(x + 2) + B/(x - 1) + C/(x - 3)."
+  },
+  {
+    "id": "SEM03_P27",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{3x^2 + x - 2}{(x - 1)(x^2 + 1)} dx",
+    "requiere_grafica": true,
+    "observaciones": "Descomponer en A/(x - 1) + (Bx + C)/(x^2 + 1) e integrar directamente por logaritmo y arctan."
+  },
+  {
+    "id": "SEM03_P28",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{x + 5}{x^3 - 3x + 2} dx",
+    "requiere_grafica": true,
+    "observaciones": "Identificar raíz x = 1 para factorizar el denominador como (x - 1)^2 (x + 2) y resolver por fracciones parciales."
+  },
+  {
+    "id": "SEM03_P29",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(2x^3 + 3x^2 + x - 1)}{(x + 1)(x^2 + 2x + 2)^2} dx",
+    "requiere_grafica": true,
+    "observaciones": "Descomponer en A/(x + 1) + (Bx + C)/(x^2 + 2x + 2) + (Dx + E)/(x^2 + 2x + 2)^2. Para la potencia cuadrada, completar cuadrados (x + 1)^2 + 1 y usar x + 1 = tan(theta)."
+  },
+  {
+    "id": "SEM03_P30",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(2x + 1)}{3x^3 + 2x - 1} dx",
+    "requiere_grafica": true,
+    "observaciones": "Encontrar la raíz racional x = 1/3 para factorizar como (3x - 1)(x^2 + x/3 + 1) y descomponer en fracciones parciales."
+  },
+  {
+    "id": "SEM03_P31",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{2x^2 + 3x - 1}{x^3 + 2x^2 + 4x + 2} dx",
+    "requiere_grafica": true,
+    "observaciones": "Factorizar el polinomio cúbico del denominador y separar en términos lineales y/o cuadráticos irreducibles."
+  },
+  {
+    "id": "SEM03_P32",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{x^4 - 2x^2 + 3x + 4}{(x - 1)^3 (x^2 + 2x + 2)} dx",
+    "requiere_grafica": true,
+    "observaciones": "Plantear A/(x - 1) + B/(x - 1)^2 + C/(x - 1)^3 + (Dx + E)/(x^2 + 2x + 2) y calcular coeficientes."
+  },
+  {
+    "id": "SEM03_P33",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(4x^4 - 2x^3 - x^2 + 3x + 1)}{x^3 + x^2 - x - 1} dx",
+    "requiere_grafica": true,
+    "observaciones": "Dividir los polinomios para reducir el grado. Factorizar el denominador como (x + 1)^2 (x - 1) para el resto."
+  },
+  {
+    "id": "SEM03_P34",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{3x^4}{(x^2 + 1)^2} dx",
+    "requiere_grafica": true,
+    "observaciones": "Aplicar la sustitución trigonométrica x = tan(theta) o expresar el numerador como 3((x^2 + 1) - 1)^2 para simplificar la fracción."
+  },
+  {
+    "id": "SEM03_P35",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{2x^2 + 41x - 91}{x^3 - 2x^2 - 11x + 12} dx",
+    "requiere_grafica": true,
+    "observaciones": "Factorizar el denominador como (x - 1)(x - 4)(x + 3) y descomponer en tres fracciones simples."
+  },
+  {
+    "id": "SEM03_P36",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(2x^4 + 3x^3 - x - 1)}{(x - 1)(x^2 + 2x + 2)^2} dx",
+    "requiere_grafica": true,
+    "observaciones": "Fracciones parciales: A/(x - 1) + (Bx + C)/(x^2 + 2x + 2) + (Dx + E)/(x^2 + 2x + 2)^2. Resolver el término con exponente 2 usando x + 1 = tan(theta)."
+  },
+  {
+    "id": "SEM03_P37",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{(5x^3 + 2)}{x^3 - 5x^2 + 4x} dx",
+    "requiere_grafica": true,
+    "observaciones": "Efectuar división polinómica. Factorizar el denominador x(x - 1)(x - 4) y resolver el residuo."
+  },
+  {
+    "id": "SEM03_P38",
+    "semana": 3,
+    "enunciado": "Calcular la integral: \\int \\frac{x^5}{(x^3 + 1)(x^3 + 8)} dx",
+    "requiere_grafica": true,
+    "observaciones": "Realizar cambio de variable u = x^3 (du = 3x^2 dx). La integral se reduce a (1/3) \\int u du / ((u + 1)(u + 8)), resolviendo por fracciones parciales en u."
   }
 ]

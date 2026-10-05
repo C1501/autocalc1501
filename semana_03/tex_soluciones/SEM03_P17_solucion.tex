@@ -1,0 +1,67 @@
+\subsection*{Problema 17}
+
+\textbf{Enunciado:} Calcular la integral indefinida
+\begin{align*}
+\int \dfrac{x^2 + 6}{(x - 1)^2 (x - 2)} \, dx
+\end{align*}
+
+\textbf{Solución:} 
+Utilizamos el método de fracciones parciales. La forma sugerida es:
+\begin{align*}
+\dfrac{x^2 + 6}{(x - 1)^2 (x - 2)} = \dfrac{A}{x - 1} + \dfrac{B}{(x - 1)^2} + \dfrac{C}{x - 2}
+\end{align*}
+
+Multiplicamos toda la expresión por el denominador común $(x - 1)^2 (x - 2)$:
+\begin{align*}
+x^2 + 6 = \, & A(x - 1)(x - 2) \\
+& + B(x - 2) + C(x - 1)^2
+\end{align*}
+
+Para hallar las constantes, evaluamos en valores convenientes de $x$:
+
+Si $x = 1$:
+\begin{align*}
+1^2 + 6 &= B(1 - 2) \\
+7 &= -B \implies B = -7
+\end{align*}
+
+Si $x = 2$:
+\begin{align*}
+2^2 + 6 &= C(2 - 1)^2 \\
+10 &= C(1)^2 \implies C = 10
+\end{align*}
+
+Para hallar $A$, evaluamos en $x = 0$ y usamos $B = -7, C = 10$:
+\begin{align*}
+0^2 + 6 &= A(-1)(-2) + B(-2) + C(-1)^2 \\
+6 &= 2A - 2(-7) + 10(1) \\
+6 &= 2A + 14 + 10 \implies 2A = -18 \\
+A &= -9
+\end{align*}
+
+Sustituimos las constantes en la integral:
+\begin{align*}
+\int \dfrac{x^2 + 6}{(x - 1)^2 (x - 2)} \, dx = \, & \int \left( \dfrac{-9}{x - 1} \right) dx \\
+& + \int \left( \dfrac{-7}{(x - 1)^2} \right) dx \\
+& + \int \left( \dfrac{10}{x - 2} \right) dx
+\end{align*}
+
+Resolvemos cada integral por separado:
+\begin{align*}
+\int \dfrac{-9}{x - 1} \, dx &= -9 \ln |x - 1| \\
+\int \dfrac{-7}{(x - 1)^2} \, dx &= \dfrac{7}{x - 1} \\
+\int \dfrac{10}{x - 2} \, dx &= 10 \ln |x - 2|
+\end{align*}
+
+Agrupando los resultados y añadiendo la constante de integración $C$, obtenemos la solución general:
+\begin{align*}
+F(x) = \, & 10 \ln |x - 2| - 9 \ln |x - 1| \\
+& + \dfrac{7}{x - 1} + C
+\end{align*}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\columnwidth]{semana_03/graficas/SEM03_P17_grafica.png}
+	\caption{Representación gráfica de $f(x)$ y su antiderivada $F(x)$ evaluada para la constante de integración $C = 0$ (Problema 17).}
+	\label{fig:problema17}
+\end{figure}
