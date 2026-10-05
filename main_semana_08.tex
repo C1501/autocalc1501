@@ -1,0 +1,80 @@
+\documentclass[conference]{IEEEtran}
+
+% =========================================================
+% PARÁMETROS CONFIGURABLES POR SEMANA
+% =========================================================
+\newcommand{\NumeroSemana}{08}
+\newcommand{\TemaSemana}{APLICACIONES DEL TEOREMA FUNDAMENTAL DEL CÁLCULO}
+
+% --- PAQUETES BÁSICOS Y MATEMÁTICOS ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{array}
+
+% --- RUTA BÁSICA DE IMÁGENES ---
+\graphicspath{{semana_05/graficas/}}
+
+\begin{document}
+	
+	% =========================================================
+	% PORTADA OFICIAL FORMATO IEEE - FIEE UNMSM
+	% =========================================================
+	\title{UNIVERSIDAD NACIONAL MAYOR DE SAN MARCOS\\
+		\Large FACULTAD DE INGENIERÍA ELECTRÓNICA Y ELÉCTRICA (FIEE)\\
+		\vspace{0.3cm}
+		\large \textbf{Curso:} Cálculo II (Cálculo Integral) \quad|\quad \textbf{Docente:} Dr. Raúl Castro Vidal\\
+		\vspace{0.4cm}
+		\huge SOLUCIÓN DE EJERCICIOS PROPUESTOS --- SEMANA \NumeroSemana\\
+		\LARGE INFORME TÉCNICO GRUPAL: \TemaSemana}
+	
+	% --- BLOQUE DE AUTORES ---
+	\author{
+		\IEEEauthorblockN{Coordinador: Adrián Córdova Suazo}
+		\IEEEauthorblockA{\textit{Código: 26190164} \\
+			\textit{Ing. Electrónica}}
+		\and
+		\IEEEauthorblockN{Integrante 2: Diego Checcori Cuya}
+		\IEEEauthorblockA{\textit{Código: 26190008} \\
+			\textit{Ing. Electrónica}}
+		\and
+		\IEEEauthorblockN{Integrante 3: Diego Anamaria Choque}
+		\IEEEauthorblockA{\textit{Código: 26190001} \\
+			\textit{Ing. Electrónica}}
+		\vspace{0.4cm}
+		\and
+		\IEEEauthorblockN{Integrante 4: Deyvis Tenorio Yucra}
+		\IEEEauthorblockA{\textit{Código: 26190199} \\
+			\textit{Ing. Electrónica}}
+		\and
+		\IEEEauthorblockN{Integrante 5: Felix Chocce Oseda}
+		\IEEEauthorblockA{\textit{Código: 23190231} \\
+			\textit{Ing. Eléctrica}}
+		\and
+		\IEEEauthorblockN{Integrante 6: Isaac Guadalupe Baños}
+		\IEEEauthorblockA{\textit{Código: 26190169} \\
+			\textit{Ing. Electrónica}}
+	}
+	
+	\maketitle
+	
+	\begin{abstract}
+		En el presente informe técnico correspondiente a la asignatura de Cálculo II, a cargo del Dr. Raúl Castro Vidal, se presenta la solución analítica paso a paso de los ejercicios propuestos para la Semana \NumeroSemana. Cada problema incluye su representación y análisis gráfico desarrollado en Matplotlib evaluado en la constante de integración $C=0$, estructurado formalmente bajo los estándares IEEE a dos columnas.
+	\end{abstract}
+	
+	\begin{IEEEkeywords}
+		Cálculo II, \TemaSemana, Matplotlib, Formato IEEE, FIEE-UNMSM.
+	\end{IEEEkeywords}
+	
+	\section{Desarrollo de los Ejercicios}
+	
+	% --- LISTA DIRECTA CON RUTAS EXPLÍCITAS ---
+	\input{semana_06/tex_soluciones/SEM06_P01_solucion.tex}
+	\input{semana_06/tex_soluciones/SEM06_P02_solucion.tex}
+	\input{semana_06/tex_soluciones/SEM06_P03_solucion.tex}
+	\input{semana_06/tex_soluciones/SEM06_P04_solucion.tex}
+\end{document}
