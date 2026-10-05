@@ -1,0 +1,62 @@
+\subsection*{Problema 12}
+\textbf{Enunciado:} Evaluar la integral definida mediante sumas de Riemann y fórmulas de suma:
+\begin{align*}
+\int_{0}^{2} (3 - x^2) \, dx
+\end{align*}
+
+\textbf{Solución:}
+Para evaluar la integral mediante la definición de límite de una suma de Riemann, consideramos una partición regular del intervalo $[0, 2]$ en $n$ subintervalos de ancho igual a:
+\begin{align*}
+\Delta x = \dfrac{2 - 0}{n} = \dfrac{2}{n}
+\end{align*}
+
+Seleccionando los extremos derechos como puntos de muestra, el $i$-ésimo punto es:
+\begin{align*}
+x_i = 0 + i\Delta x = \dfrac{2i}{n}
+\end{align*}
+
+Evaluamos la función $f(x) = 3 - x^2$ en cada $x_i$:
+\begin{align*}
+f(x_i) &= 3 - \left(\dfrac{2i}{n}\right)^2 \\
+&= 3 - \dfrac{4i^2}{n^2}
+\end{align*}
+
+Planteamos la suma de Riemann usando la notación de sumatoria:
+\begin{align*}
+S_n &= \sum_{i=1}^{n} f(x_i) \Delta x \\
+&= \sum_{i=1}^{n} \left(3 - \dfrac{4i^2}{n^2}\right) \dfrac{2}{n}
+\end{align*}
+
+Extraemos las constantes y distribuimos la suma utilizando las propiedades lineales:
+\begin{align*}
+S_n &= \dfrac{2}{n} \left[ \sum_{i=1}^{n} 3 - \dfrac{4}{n^2} \sum_{i=1}^{n} i^2 \right] \\
+&= \dfrac{2}{n} \left[ 3n - \dfrac{4}{n^2} \left( \dfrac{n(n+1)(2n+1)}{6} \right) \right]
+\end{align*}
+
+Simplificamos la expresión algebraica dentro del corchete:
+\begin{align*}
+S_n &= 6 - \dfrac{8(n+1)(2n+1)}{6n^2} \\
+&= 6 - \dfrac{4(2n^2 + 3n + 1)}{3n^2}
+\end{align*}
+
+Distribuimos el término y separamos en fracciones:
+\begin{align*}
+S_n &= 6 - \left(\dfrac{8n^2}{3n^2} + \dfrac{12n}{3n^2} + \dfrac{4}{3n^2}\right) \\
+&= 6 - \dfrac{8}{3} - \dfrac{4}{n} - \dfrac{4}{3n^2} \\
+&= \dfrac{10}{3} - \dfrac{4}{n} - \dfrac{4}{3n^2}
+\end{align*}
+
+Calculamos el límite cuando $n \to \infty$ para hallar el valor exacto de la integral definida:
+\begin{align*}
+\int_{0}^{2} (3 - x^2) \, dx &= \lim_{n \to \infty} S_n \\
+&= \lim_{n \to \infty} \left( \dfrac{10}{3} - \dfrac{4}{n} - \dfrac{4}{3n^2} \right) \\
+&= \dfrac{10}{3}
+\end{align*}
+El valor exacto de la integral definida es $\dfrac{10}{3}$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\columnwidth]{semana_06/graficas/SEM06_P12_grafica.png}
+	\caption{Representación gráfica de $f(x)$ y su antiderivada $F(x)$ evaluada para la constante de integración $C = 0$ (Problema 12).}
+	\label{fig:problema12}
+\end{figure}

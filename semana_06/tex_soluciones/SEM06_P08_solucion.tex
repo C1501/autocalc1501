@@ -1,0 +1,88 @@
+\subsection*{Problema 08}
+
+\textbf{Enunciado:} Evaluar la integral definida 
+mediante sumas de Riemann utilizando el límite 
+del extremo derecho:
+\begin{align*}
+\int_{0}^{1} (x^2 + 2x - 1) \, dx
+\end{align*}
+
+\textbf{Solución:} 
+Primero, dividimos el intervalo $[0, 1]$ 
+en $n$ subintervalos iguales de ancho:
+\begin{align*}
+\Delta x = \dfrac{1 - 0}{n} = \dfrac{1}{n}
+\end{align*}
+
+Los puntos extremos derechos de cada 
+subintervalo se definen como:
+\begin{align*}
+x_i = a + i\Delta x = 0 + \dfrac{i}{n} = \dfrac{i}{n}
+\end{align*}
+
+Evaluamos la función $f(x) = x^2 + 2x - 1$ 
+en cada punto $x_i$:
+\begin{align*}
+f(x_i) &= \left(\dfrac{i}{n}\right)^2 
++ 2\left(\dfrac{i}{n}\right) - 1 \\
+&= \dfrac{i^2}{n^2} + \dfrac{2i}{n} - 1
+\end{align*}
+
+Planteamos la suma de Riemann con $n$ 
+rectángulos:
+\begin{align*}
+S_n &= \sum_{i=1}^{n} f(x_i) \Delta x \\
+&= \sum_{i=1}^{n} \left( \dfrac{i^2}{n^2} 
++ \dfrac{2i}{n} - 1 \right) \dfrac{1}{n}
+\end{align*}
+
+Distribuimos el término $\dfrac{1}{n}$ 
+y separamos en tres sumatorias:
+\begin{align*}
+S_n &= \dfrac{1}{n^3} \sum_{i=1}^{n} i^2 
++ \dfrac{2}{n^2} \sum_{i=1}^{n} i 
+- \dfrac{1}{n} \sum_{i=1}^{n} 1
+\end{align*}
+
+Utilizamos las fórmulas estándar para 
+las sumas notables:
+\begin{align*}
+S_n &= \dfrac{1}{n^3} \left[ \dfrac{n(n+1)(2n+1)}{6} \right] \\
+&\quad + \dfrac{2}{n^2} \left[ \dfrac{n(n+1)}{2} \right] 
+- \dfrac{1}{n} (n)
+\end{align*}
+
+Simplificamos cada término algebraicamente:
+\begin{align*}
+S_n &= \dfrac{2n^3 + 3n^2 + n}{6n^3} 
++ \dfrac{n^2 + n}{n^2} - 1 \\
+&= \left(\dfrac{1}{3} + \dfrac{1}{2n} 
++ \dfrac{1}{6n^2}\right) + \left(1 + \dfrac{1}{n}\right) - 1
+\end{align*}
+
+Agrupamos los términos constantes y 
+los dependientes de $n$:
+\begin{align*}
+S_n &= \dfrac{1}{3} + 1 - 1 
++ \left(\dfrac{1}{2n} + \dfrac{1}{n} 
++ \dfrac{1}{6n^2}\right) \\
+&= \dfrac{1}{3} + \dfrac{3}{2n} + \dfrac{1}{6n^2}
+\end{align*}
+
+Calculamos el límite cuando $n \to \infty$ 
+para obtener el valor exacto de la integral:
+\begin{align*}
+\int_{0}^{1} (x^2 + 2x - 1) \, dx &= \lim_{n \to \infty} S_n \\
+&= \lim_{n \to \infty} \left( \dfrac{1}{3} 
++ \dfrac{3}{2n} + \dfrac{1}{6n^2} \right) \\
+&= \dfrac{1}{3} + 0 + 0 = \dfrac{1}{3}
+\end{align*}
+
+El valor de la integral definida es $\dfrac{1}{3}$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\columnwidth]{semana_06/graficas/SEM06_P08_grafica.png}
+	\caption{Representación gráfica de $f(x)$ y su antiderivada $F(x)$ evaluada para la constante de integración $C = 0$ (Problema 08).}
+	\label{fig:problema08}
+\end{figure}
