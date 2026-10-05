@@ -1,0 +1,71 @@
+\subsection*{Problema 27}
+
+\textbf{Enunciado:} Calcular la integral:
+\begin{align*}
+  \int \dfrac{dx}{\sqrt{x} + \sqrt[3]{x}}
+\end{align*}
+
+\textbf{Solución:} Para resolver la integral dada, utilizamos el método de sustitución por irracionalidades. Los índices de los radicales son $2$ y $3$. El mínimo común múltiplo es $6$.
+
+Proponemos la sustitución:
+\begin{align*}
+  x &= u^6 \\
+  dx &= 6u^5 \, du
+\end{align*}
+
+Sustituimos $x$ y $dx$ en la integral original:
+\begin{align*}
+  \int \dfrac{6u^5 \, du}{\sqrt{u^6} + \sqrt[3]{u^6}}
+\end{align*}
+
+Simplificamos los radicales en el denominador:
+\begin{align*}
+  \sqrt{u^6} &= u^3 \\
+  \sqrt[3]{u^6} &= u^2
+\end{align*}
+
+Reescribimos la integral con la función racional obtenida:
+\begin{align*}
+  \int \dfrac{6u^5 \, du}{u^3 + u^2}
+\end{align*}
+
+Factorizamos $u^2$ en el denominador y simplificamos la expresión:
+\begin{align*}
+  \int \dfrac{6u^5 \, du}{u^2(u + 1)} &= \int \dfrac{6u^3 \, du}{u + 1}
+\end{align*}
+
+Realizamos la división polinómica de $\dfrac{6u^3}{u + 1}$:
+\begin{align*}
+  \dfrac{6u^3}{u + 1} = 6u^2 - 6u + 6 - \dfrac{6}{u + 1}
+\end{align*}
+
+Integramos cada término por separado:
+\begin{align*}
+  &\int \left( 6u^2 - 6u + 6 - \dfrac{6}{u + 1} \right) du \\
+  &= 2u^3 - 3u^2 + 6u - 6\ln|u + 1| + C
+\end{align*}
+
+Recordamos que $x = u^6$, por lo tanto $u = \sqrt[6]{x} = x^{1/6}$. Sustituimos de regreso en la solución:
+\begin{align*}
+  2(\sqrt[6]{x})^3 &- 3(\sqrt[6]{x})^2 + 6\sqrt[6]{x} \\
+  &- 6\ln|\sqrt[6]{x} + 1| + C
+\end{align*}
+
+Simplificamos los radicales:
+\begin{align*}
+  2\sqrt{x} &- 3\sqrt[3]{x} + 6\sqrt[6]{x} \\
+  &- 6\ln|\sqrt[6]{x} + 1| + C
+\end{align*}
+
+Por lo tanto, el resultado final de la integral indefinida es:
+\begin{align*}
+  2\sqrt{x} &- 3\sqrt[3]{x} + 6\sqrt[6]{x} \\
+  &- 6\ln(\sqrt[6]{x} + 1) + C
+\end{align*}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\columnwidth]{semana_05/graficas/SEM05_P27_grafica.png}
+	\caption{Representación gráfica de $f(x)$ y su antiderivada $F(x)$ evaluada para la constante de integración $C = 0$ (Problema 27).}
+	\label{fig:problema27}
+\end{figure}

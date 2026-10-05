@@ -1,0 +1,49 @@
+\subsection*{Problema 26}
+
+\noindent\textbf{Enunciado:} Calcular la integral indefinida:
+\begin{align*}
+I = \int \dfrac{dx}{\sqrt{x - a} + \sqrt{x - b}}
+\end{align*}
+
+\noindent\textbf{Solución:} 
+Siguiendo las indicaciones, racionalizamos el denominador multiplicando el numerador y el denominador por su conjugado, que es $(\sqrt{x - a} - \sqrt{x - b})$.
+
+El denominador se simplifica mediante la diferencia de cuadrados:
+\begin{align*}
+(\sqrt{x - a}&+\sqrt{x - b})(\sqrt{x - a}-\sqrt{x - b}) \\
+&= (\sqrt{x - a})^2 - (\sqrt{x - b})^2 \\
+&= (x - a) - (x - b) = b - a
+\end{align*}
+
+Asumiendo que $a \neq b$, la integral se reescribe de la siguiente forma:
+\begin{align*}
+I &= \int \dfrac{\sqrt{x - a} - \sqrt{x - b}}{b - a} \, dx \\
+I &= \dfrac{1}{b - a} \int (\sqrt{x - a} - \sqrt{x - b}) \, dx
+\end{align*}
+
+Ahora, resolvemos cada término por separado utilizando una sustitución básica o integración directa de potencias. Para el primer término, sea $u = x - a \implies du = dx$. Para el segundo, sea $v = x - b \implies dv = dx$.
+
+Aplicando la regla de integración para funciones potenciales:
+\begin{align*}
+\int \sqrt{x - a} \, dx &= \dfrac{2}{3}(x - a)^{\frac{3}{2}} \\
+\int \sqrt{x - b} \, dx &= \dfrac{2}{3}(x - b)^{\frac{3}{2}}
+\end{align*}
+
+Sustituyendo estos resultados de vuelta en la expresión para $I$, obtenemos:
+\begin{align*}
+I &= \dfrac{1}{b - a} \bigg[ \dfrac{2}{3}(x - a)^{\frac{3}{2}} \\
+&\quad - \dfrac{2}{3}(x - b)^{\frac{3}{2}} \bigg] + C
+\end{align*}
+
+Factorizando términos comunes, la solución final es:
+\begin{align*}
+I &= \dfrac{2}{3(b - a)} \big[ (x - a)^{\frac{3}{2}} \\
+&\quad - (x - b)^{\frac{3}{2}} \big] + C
+\end{align*}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\columnwidth]{semana_05/graficas/SEM05_P26_grafica.png}
+	\caption{Representación gráfica de $f(x)$ y su antiderivada $F(x)$ evaluada para la constante de integración $C = 0$ (Problema 26).}
+	\label{fig:problema26}
+\end{figure}

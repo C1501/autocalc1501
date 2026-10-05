@@ -1,0 +1,55 @@
+\subsection*{Problema 40}
+\textbf{Enunciado:} Calcular la integral:
+\begin{equation*}
+\int x^2 (1 + x^2)^{-1/2} dx
+\end{equation*}
+
+\textbf{Solución:}
+Para resolver la integral dada, utilizaremos el método de integración por partes. 
+Sea la integral:
+\begin{equation*}
+I = \int \dfrac{x^2}{\sqrt{1 + x^2}} \, dx
+\end{equation*}
+
+Definimos las partes para aplicar la fórmula $\int u \, dv = u v - \int v \, du$:
+\begin{align*}
+u &= x \implies du = dx \\
+dv &= \dfrac{x}{\sqrt{1 + x^2}} \, dx
+\end{align*}
+
+Para encontrar $v$, resolvemos la integral de $dv$ mediante un cambio de variable simple $w = 1 + x^2$, de donde $dw = 2x \, dx$:
+\begin{align*}
+v &= \int \dfrac{x}{\sqrt{1 + x^2}} \, dx \\
+&= \dfrac{1}{2} \int w^{-1/2} \, dw = \sqrt{w} = \sqrt{1 + x^2}
+\end{align*}
+
+Aplicando la fórmula de integración por partes:
+\begin{align*}
+I &= x \sqrt{1 + x^2} \\
+&\quad - \int \sqrt{1 + x^2} \, dx
+\end{align*}
+
+La integral restante se resuelve usando la sustitución trigonométrica $x = \tan\theta$, resultando en:
+\begin{align*}
+\int &\sqrt{1 + x^2} \, dx = \dfrac{x}{2}\sqrt{1 + x^2} \\
+&+ \dfrac{1}{2}\ln\left|x + \sqrt{1 + x^2}\right|
+\end{align*}
+
+Sustituyendo este resultado de vuelta en nuestra expresión para $I$:
+\begin{align*}
+I &= x \sqrt{1 + x^2} - \left( \dfrac{x}{2}\sqrt{1 + x^2} \right. \\
+&\quad \left. + \dfrac{1}{2}\ln\left|x + \sqrt{1 + x^2}\right| \right)
+\end{align*}
+
+Simplificando los términos semejantes, obtenemos la solución final:
+\begin{align*}
+I &= \dfrac{x}{2}\sqrt{1 + x^2} \\
+&\quad - \dfrac{1}{2}\ln\left|x + \sqrt{1 + x^2}\right| + C
+\end{align*}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\columnwidth]{semana_05/graficas/SEM05_P40_grafica.png}
+	\caption{Representación gráfica de $f(x)$ y su antiderivada $F(x)$ evaluada para la constante de integración $C = 0$ (Problema 40).}
+	\label{fig:problema40}
+\end{figure}

@@ -1,0 +1,73 @@
+\subsection*{Problema 41}
+
+\textbf{Enunciado:} \\
+Calcular la integral indefinida:
+\begin{align*}
+I = \int -\dfrac{\sqrt[4]{x}}{\sqrt{x}(1 + \sqrt[4]{x})} \, dx
+\end{align*}
+
+\textbf{Solución:} \\
+Para resolver la integral, aplicamos la sustitución 
+sugerida para eliminar los radicales. 
+Sea $u = \sqrt[4]{x}$. De aquí obtenemos que:
+\begin{align*}
+x &= u^4 \\
+dx &= 4u^3 \, du
+\end{align*}
+
+Además, expresamos $\sqrt{x}$ en términos de $u$:
+\begin{align*}
+\sqrt{x} = (x^{1/4})^2 = u^2
+\end{align*}
+
+Sustituimos $x$, $\sqrt{x}$ y $dx$ en la integral original:
+\begin{align*}
+I &= \int -\dfrac{u}{u^2 (1 + u)} (4u^3 \, du)
+\end{align*}
+
+Simplificamos la expresión algebraica dentro 
+del integrando paso a paso:
+\begin{align*}
+I &= \int -\dfrac{4u^4}{u^2 (1 + u)} \, du \\
+I &= -4 \int \dfrac{u^2}{1 + u} \, du
+\end{align*}
+
+Para integrar la función racional impropia, 
+realizamos la división polinómica o sumamos 
+y restamos $1$ en el numerador:
+\begin{align*}
+\dfrac{u^2}{1 + u} &= \dfrac{u^2 - 1 + 1}{u + 1} \\
+&= u - 1 + \dfrac{1}{1 + u}
+\end{align*}
+
+Sustituimos este resultado en la integral:
+\begin{align*}
+I &= -4 \int \left( u - 1 + \dfrac{1}{1 + u} \right) du
+\end{align*}
+
+integramos término a término:
+\begin{align*}
+I &= -4 \left( \dfrac{u^2}{2} - u + \ln|1 + u| \right) + C \\
+I &= -2u^2 + 4u - 4\ln|1 + u| + C
+\end{align*}
+
+Finalmente, regresamos a la variable original 
+reemplazando $u = \sqrt[4]{x}$ y recordando 
+que $u^2 = \sqrt{x}$:
+\begin{align*}
+I = &-2\sqrt{x} + 4\sqrt[4]{x} \\
+&- 4\ln|1 + \sqrt[4]{x}| + C
+\end{align*}
+
+\textbf{Resultado final:}
+\begin{align*}
+\int -\dfrac{\sqrt[4]{x}}{\sqrt{x}(1 + \sqrt[4]{x})} \, dx = \\
+-2\sqrt{x} + 4\sqrt[4]{x} - 4\ln(1 + \sqrt[4]{x}) + C
+\end{align*}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\columnwidth]{semana_05/graficas/SEM05_P41_grafica.png}
+	\caption{Representación gráfica de $f(x)$ y su antiderivada $F(x)$ evaluada para la constante de integración $C = 0$ (Problema 41).}
+	\label{fig:problema41}
+\end{figure}

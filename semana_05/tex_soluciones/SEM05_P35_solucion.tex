@@ -1,0 +1,67 @@
+\subsection*{Problema 35}
+
+\textbf{Enunciado:}
+Calcular la integral indefinida:
+\begin{align*}
+\int x^{3} \left(2 + x^{2}\right)^{-\frac{5}{2}} \, dx
+\end{align*}
+
+\textbf{Solución:}
+Para resolver esta integral que contiene un diferencial binomio, aplicamos la sugerencia del enunciado. Realizamos la sustitución:
+\begin{align*}
+u &= 2 + x^{2} \\
+du &= 2x \, dx \implies \dfrac{1}{2} \, du = x \, dx
+\end{align*}
+
+Despejamos $x^{2}$ de la sustitución para reutilizarlo en el integrando:
+\begin{align*}
+x^{2} = u - 2
+\end{align*}
+
+Reescribimos la integral original separando un factor $x$ para formar el diferencial $du$:
+\begin{align*}
+I &= \int x^{2} \left(2 + x^{2}\right)^{-\frac{5}{2}} (x \, dx)
+\end{align*}
+
+Sustituimos $x^{2}$, el binomio y el diferencial:
+\begin{align*}
+I &= \int (u - 2) u^{-\frac{5}{2}} \left(\dfrac{1}{2} \, du\right) \\
+I &= \dfrac{1}{2} \int \left( u^{1 - \frac{5}{2}} - 2 u^{-\frac{5}{2}} \right) du \\
+I &= \dfrac{1}{2} \int \left( u^{-\frac{3}{2}} - 2 u^{-\frac{5}{2}} \right) du
+\end{align*}
+
+Integramos cada término aplicando la regla de la potencia:
+\begin{align*}
+I &= \dfrac{1}{2} \left( \dfrac{u^{-\frac{1}{2}}}{-\frac{1}{2}} - 2 \left( \dfrac{u^{-\frac{3}{2}}}{-\frac{3}{2}} \right) \right) + C \\
+I &= \dfrac{1}{2} \left( -2u^{-\frac{1}{2}} + \dfrac{4}{3}u^{-\frac{3}{2}} \right) + C \\
+I &= -u^{-\frac{1}{2}} + \dfrac{2}{3}u^{-\frac{3}{2}} + C
+\end{align*}
+
+Factorizamos $u^{-\frac{3}{2}}$ para simplificar la expresión algebraica:
+\begin{align*}
+I &= u^{-\frac{3}{2}} \left( -u + \dfrac{2}{3} \right) + C \\
+I &= u^{-\frac{3}{2}} \left( \dfrac{2 - 3u}{3} \right) + C
+\end{align*}
+
+Regresamos a la variable original $u = 2 + x^{2}$:
+\begin{align*}
+I &= \left(2 + x^{2}\right)^{-\frac{3}{2}} \\
+&\quad \cdot \left( \dfrac{2 - 3(2 + x^{2})}{3} \right) + C
+\end{align*}
+
+Simplificamos el numerador dentro del paréntesis:
+\begin{align*}
+2 - 3(2 + x^{2}) &= 2 - 6 - 3x^{2} = -4 - 3x^{2}
+\end{align*}
+
+Por lo tanto, la solución final es:
+\begin{align*}
+I &= -\dfrac{3x^{2} + 4}{3\left(2 + x^{2}\right)^{\frac{3}{2}}} + C
+\end{align*}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\columnwidth]{semana_05/graficas/SEM05_P35_grafica.png}
+	\caption{Representación gráfica de $f(x)$ y su antiderivada $F(x)$ evaluada para la constante de integración $C = 0$ (Problema 35).}
+	\label{fig:problema35}
+\end{figure}
