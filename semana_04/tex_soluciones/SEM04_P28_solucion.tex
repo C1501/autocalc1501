@@ -1,0 +1,76 @@
+\subsection*{Problema 28}
+
+\textbf{Enunciado:} \\
+Calcular la integral:
+\begin{equation*}
+\int \dfrac{dx}{2\cos x - 3\sin x}
+\end{equation*}
+
+\textbf{Solución:} \\
+Para resolver esta integral que contiene funciones trigonométricas en el denominador, empleamos la sustitución universal de Weierstrass:
+\begin{equation*}
+z = \tan\left(\dfrac{x}{2}\right), \quad -\pi < x < \pi
+\end{equation*}
+
+A partir de esta sustitución, las identidades trigonométricas fundamentales en términos de $z$ son:
+\begin{align*}
+\cos x &= \dfrac{1 - z^2}{1 + z^2} \\
+\sin x &= \dfrac{2z}{1 + z^2} \\
+dx &= \dfrac{2 \, dz}{1 + z^2}
+\end{align*}
+
+Sustituimos estas expresiones en la integral original:
+\begin{align*}
+I &= \int \dfrac{\frac{2 \, dz}{1 + z^2}}{2\left(\dfrac{1 - z^2}{1 + z^2}\right) - 3\left(\dfrac{2z}{1 + z^2}\right)}
+\end{align*}
+
+Simplificamos el denominador común $(1 + z^2)$ tanto en el numerador como en el denominador:
+\begin{align*}
+I &= \int \dfrac{2 \, dz}{2(1 - z^2) - 6z} \\
+I &= \int \dfrac{2 \, dz}{2 - 2z^2 - 6z}
+\end{align*}
+
+Factorizamos y simplificamos la expresión cuadrática resultante:
+\begin{align*}
+I &= \int \dfrac{2 \, dz}{-2(z^2 + 3z - 1)} \\
+I &= -\int \dfrac{dz}{z^2 + 3z - 1}
+\end{align*}
+
+Completamos el trinomio cuadrado perfecto en el denominador:
+\begin{align*}
+z^2 + 3z - 1 &= \left(z + \dfrac{3}{2}\right)^2 - \dfrac{9}{4} - 1 \\
+&= \left(z + \dfrac{3}{2}\right)^2 - \dfrac{13}{4}
+\end{align*}
+
+Reescribimos la integral con esta forma:
+\begin{align*}
+I &= -\int \dfrac{dz}{\left(z + \dfrac{3}{2}\right)^2 - \left(\dfrac{\sqrt{13}}{2}\right)^2}
+\end{align*}
+
+Aplicamos la fórmula de integración para fracciones parciales con diferencia de cuadrados:
+\begin{equation*}
+\int \dfrac{du}{u^2 - a^2} = \dfrac{1}{2a} \ln\left|\dfrac{u - a}{u + a}\right|
+\end{equation*}
+
+Donde $u = z + \dfrac{3}{2}$ y $a = \dfrac{\sqrt{13}}{2}$. Integrando obtenemos:
+\begin{align*}
+I &= -\left(\dfrac{1}{2\left(\dfrac{\sqrt{13}}{2}\right)}\right) \\
+&\quad \cdot \ln\left|\dfrac{z + \dfrac{3}{2} - \dfrac{\sqrt{13}}{2}}{z + \dfrac{3}{2} + \dfrac{\sqrt{13}}{2}}\right| + C
+\end{align*}
+
+Simplificamos la constante y los numeradores internos:
+\begin{align*}
+I &= -\dfrac{1}{\sqrt{13}} \ln\left|\dfrac{2z + 3 - \sqrt{13}}{2z + 3 + \sqrt{13}}\right| + C
+\end{align*}
+
+Regresamos a la variable original $x$ sustituyendo $z = \tan\left(\frac{x}{2}\right)$:
+\begin{align*}
+I &= -\dfrac{1}{\sqrt{13}} \ln\left| \dfrac{2\tan\left(\frac{x}{2}\right) + 3 - \sqrt{13}}{2\tan\left(\frac{x}{2}\right) + 3 + \sqrt{13}} \right| + C
+\end{align*}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\columnwidth]{semana_04/graficas/SEM04_P28_grafica.png}
+	\caption{Representación gráfica de $f(x)$ y su antiderivada $F(x)$ evaluada para la constante de integración $C = 0$ (Problema 28).}
+	\label{fig:problema28}
+\end{figure}
