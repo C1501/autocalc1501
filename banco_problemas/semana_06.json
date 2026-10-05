@@ -2,8 +2,127 @@
   {
     "id": "SEM06_P01",
     "semana": 6,
-    "enunciado": "Ejemplo de problema para la Semana 6",
-    "requiere_grafica": false,
-    "observaciones": ""
+    "enunciado": "Evaluar la integral definida mediante sumas de Riemann / fórmulas de suma: \\int_{-3}^{1} x dx",
+    "requiere_grafica": true,
+    "observaciones": "Formular la suma de Riemann empleando una partición regular con \\Delta x = \\frac{4}{n} y la fórmula de suma \\sum_{i=1}^{n} i = \\frac{n(n+1)}{2} para tomar el límite cuando n \\to \\infty."
+  },
+  {
+    "id": "SEM06_P02",
+    "semana": 6,
+    "enunciado": "Evaluar la integral definida mediante sumas de Riemann / fórmulas de suma: \\int_{0}^{3} x dx",
+    "requiere_grafica": true,
+    "observaciones": "Definir \\Delta x = \\frac{3}{n} y x_i = \\frac{3i}{n}. Evaluar el límite del sumatorio utilizando la fórmula de sumatoria de potencias de grado 1."
+  },
+  {
+    "id": "SEM06_P03",
+    "semana": 6,
+    "enunciado": "Evaluar la integral definida mediante sumas de Riemann / fórmulas de suma: \\int_{1}^{2} x dx",
+    "requiere_grafica": true,
+    "observaciones": "Establecer la partición en [1, 2] con \\Delta x = \\frac{1}{n} y aplicar el límite de la suma de Riemann."
+  },
+  {
+    "id": "SEM06_P04",
+    "semana": 6,
+    "enunciado": "Evaluar la integral definida mediante sumas de Riemann / fórmulas de suma: \\int_{-2}^{3} x dx",
+    "requiere_grafica": true,
+    "observaciones": "Utilizar \\Delta x = \\frac{5}{n} y x_i = -2 + \\frac{5i}{n} para calcular el límite de la suma."
+  },
+  {
+    "id": "SEM06_P05",
+    "semana": 6,
+    "enunciado": "Evaluar la integral definida mediante sumas de Riemann / fórmulas de suma: \\int_{0}^{1} (x^3 - 1) dx",
+    "requiere_grafica": true,
+    "observaciones": "Requiere aplicar la fórmula de la suma de cubos \\sum_{i=1}^{n} i^3 = \\left(\\frac{n(n+1)}{2}\\right)^2 junto con la constante."
+  },
+  {
+    "id": "SEM06_P06",
+    "semana": 6,
+    "enunciado": "Evaluar la integral definida mediante sumas de Riemann / fórmulas de suma: \\int_{0}^{2} (3 - x^2) x dx",
+    "requiere_grafica": true,
+    "observaciones": "Distribuir para obtener \\int_{0}^{2} (3x - x^3) dx y emplear las fórmulas de suma de potencias lineales y cúbicas."
+  },
+  {
+    "id": "SEM06_P07",
+    "semana": 6,
+    "enunciado": "Evaluar la integral definida mediante sumas de Riemann / fórmulas de suma: \\int_{-1}^{1} x dx",
+    "requiere_grafica": true,
+    "observaciones": "Plantear la suma sobre [-1, 1] con \\Delta x = \\frac{2}{n} y evaluar el límite cuando n \\to \\infty."
+  },
+  {
+    "id": "SEM06_P08",
+    "semana": 6,
+    "enunciado": "Evaluar la integral definida mediante sumas de Riemann / fórmulas de suma: \\int_{0}^{1} (x^2 + 2x - 1) dx",
+    "requiere_grafica": true,
+    "observaciones": "Separar en sumatorios y utilizar las fórmulas para \\sum i^2 = \\frac{n(n+1)(2n+1)}{6} y \\sum i."
+  },
+  {
+    "id": "SEM06_P09",
+    "semana": 6,
+    "enunciado": "Evaluar la integral definida mediante sumas de Riemann / fórmulas de suma: \\int_{1}^{2} (4 - x^2) dx",
+    "requiere_grafica": true,
+    "observaciones": "Configurar la suma en [1, 2] con x_i = 1 + \\frac{i}{n} y sustituir en la fórmula de suma de cuadrados."
+  },
+  {
+    "id": "SEM06_P10",
+    "semana": 6,
+    "enunciado": "Evaluar la integral definida mediante sumas de Riemann / fórmulas de suma: \\int_{2}^{3} x dx",
+    "requiere_grafica": true,
+    "observaciones": "Partición regular con \\Delta x = \\frac{1}{n} en el intervalo [2, 3] y límite de la suma de Riemann."
+  },
+  {
+    "id": "SEM06_P11",
+    "semana": 6,
+    "enunciado": "Evaluar la integral definida mediante sumas de Riemann / fórmulas de suma: \\int_{0}^{1} (3x^2 - 1) dx",
+    "requiere_grafica": true,
+    "observaciones": "Sustituir x_i = \\frac{i}{n} y simplificar utilizando la suma de cuadrados \\sum_{i=1}^n i^2."
+  },
+  {
+    "id": "SEM06_P12",
+    "semana": 6,
+    "enunciado": "Evaluar la integral definida mediante sumas de Riemann / fórmulas de suma: \\int_{0}^{2} (3 - x^2) dx",
+    "requiere_grafica": true,
+    "observaciones": "Partición de [0, 2] con \\Delta x = \\frac{2}{n} y evaluación con la fórmula del sumatorio de cuadrados."
+  },
+  {
+    "id": "SEM06_P13",
+    "semana": 6,
+    "enunciado": "Evaluar la integral definida mediante sumas de Riemann / fórmulas de suma: \\int_{1}^{2} x^{-2} dx",
+    "requiere_grafica": true,
+    "observaciones": "Se puede abordar mediante una partición en progresión geométrica de $q = (2)^{1/n}$ o mediante aproximación de límites de Riemann."
+  },
+  {
+    "id": "SEM06_P14",
+    "semana": 6,
+    "enunciado": "Evaluar la integral definida mediante sumas de Riemann / fórmulas de suma: \\int_{0}^{1} (1 - x^3) dx",
+    "requiere_grafica": true,
+    "observaciones": "Aplicar la fórmula para la suma de cubos de los primeros n números enteros para calcular el límite de Riemann."
+  },
+  {
+    "id": "SEM06_P15",
+    "semana": 6,
+    "enunciado": "Evaluar la integral definida mediante sumas de Riemann / fórmulas de suma: \\int_{0}^{\\pi} \\cos x dx",
+    "requiere_grafica": true,
+    "observaciones": "Utilizar la identidad trigonométrica para la suma de cosenos en progresión aritmética: \\sum_{i=1}^n \\cos(i\\Delta x)."
+  },
+  {
+    "id": "SEM06_P16",
+    "semana": 6,
+    "enunciado": "Evaluar la integral definida mediante sumas de Riemann / fórmulas de suma: \\int_{a}^{b} x^{-2} dx, \\quad 0 < a < b",
+    "requiere_grafica": true,
+    "observaciones": "Utilizar una partición geométrica x_i = a(b/a)^{i/n} para evaluar el límite de Riemann de la función racional x^{-2}."
+  },
+  {
+    "id": "SEM06_P17",
+    "semana": 6,
+    "enunciado": "Evaluar la integral definida mediante sumas de Riemann / fórmulas de suma: \\int_{0}^{1} (x^2 - x^3) dx",
+    "requiere_grafica": true,
+    "observaciones": "Descomponer la suma usando combinaciones de fórmulas de sumas de cuadrados y cubos."
+  },
+  {
+    "id": "SEM06_P18",
+    "semana": 6,
+    "enunciado": "Evaluar la integral definida mediante sumas de Riemann / fórmulas de suma: \\int_{-2}^{2} (x^2 - 2x + 2) dx",
+    "requiere_grafica": true,
+    "observaciones": "Partición regular sobre [-2, 2] con \\Delta x = \\frac{4}{n} y combinación de fórmulas de suma constantes, lineales y cuadráticas."
   }
 ]
