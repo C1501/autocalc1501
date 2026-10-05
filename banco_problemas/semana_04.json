@@ -2,8 +2,204 @@
   {
     "id": "SEM04_P01",
     "semana": 4,
-    "enunciado": "Ejemplo de problema para la Semana 4",
-    "requiere_grafica": false,
-    "observaciones": ""
+    "enunciado": "Calcular la integral: \\int \\frac{dx}{1 + \\sin x + \\cos x}",
+    "requiere_grafica": true,
+    "observaciones": "Aplicar la sustitución universal de Weierstrass z = \\tan(x/2), donde \\sin x = \\frac{2z}{1+z^2}, \\cos x = \\frac{1-z^2}{1+z^2} y dx = \\frac{2dz}{1+z^2}."
+  },
+  {
+    "id": "SEM04_P02",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{\\sin x dx}{1 + \\sin x}",
+    "requiere_grafica": true,
+    "observaciones": "Sumar y restar 1 en el numerador para expresar como \\int dx - \\int \\frac{dx}{1 + \\sin x}, resolviendo la segunda mediante la sustitución z = \\tan(x/2) o multiplicando por el conjugado (1 - \\sin x)."
+  },
+  {
+    "id": "SEM04_P03",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{\\tan x dx}{1 + \\cos x}",
+    "requiere_grafica": true,
+    "observaciones": "Expresar \\tan x = \\frac{\\sin x}{\\cos x} y aplicar la sustitución u = \\cos x para simplificar en fracciones parciales simples."
+  },
+  {
+    "id": "SEM04_P04",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{dx}{1 + \\cos x}",
+    "requiere_grafica": true,
+    "observaciones": "Usar la identidad del ángulo medio 1 + \\cos x = 2\\cos^2(x/2) para obtener (1/2)\\int \\sec^2(x/2)dx = \\tan(x/2) + C."
+  },
+  {
+    "id": "SEM04_P05",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{dx}{1 - \\cos x}",
+    "requiere_grafica": true,
+    "observaciones": "Usar la identidad del ángulo medio 1 - \\cos x = 2\\sin^2(x/2) para expresar la integral como (1/2)\\int \\csc^2(x/2)dx = -\\cot(x/2) + C."
+  },
+  {
+    "id": "SEM04_P06",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{\\sin x dx}{1 + \\cos x}",
+    "requiere_grafica": true,
+    "observaciones": "Sustitución directa u = 1 + \\cos x con du = -\\sin x dx, lo que resulta en -\\ln|1 + \\cos x| + C."
+  },
+  {
+    "id": "SEM04_P07",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{\\cos x dx}{5 + 4\\cos x}",
+    "requiere_grafica": true,
+    "observaciones": "Reescribir el numerador como \\frac{1}{4}(5 + 4\\cos x) - \\frac{5}{4} para separar en (1/4)\\int dx - (5/4)\\int \\frac{dx}{5 + 4\\cos x} y aplicar la sustitución de Weierstrass z = \\tan(x/2)."
+  },
+  {
+    "id": "SEM04_P08",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{dx}{\\cos x + \\cot x}",
+    "requiere_grafica": true,
+    "observaciones": "Expresar \\cot x = \\frac{\\cos x}{\\sin x}, simplificar la fracción a \\frac{\\sin x dx}{\\cos x(1 + \\sin x)} y aplicar la sustitución u = \\sin x."
+  },
+  {
+    "id": "SEM04_P09",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{\\sin x dx}{1 - \\cos x + \\sin x}",
+    "requiere_grafica": true,
+    "observaciones": "Aplicar la sustitución de Weierstrass z = \\tan(x/2) para transformar en una función racional e integrar por fracciones parciales."
+  },
+  {
+    "id": "SEM04_P10",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{dx}{8 - 4\\sin x + 7\\cos x}",
+    "requiere_grafica": true,
+    "observaciones": "Aplicar la sustitución de Weierstrass z = \\tan(x/2) para convertir el denominador en un trinomio cuadrático de la forma az^2 + bz + c y completar cuadrados."
+  },
+  {
+    "id": "SEM04_P11",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{dx}{\\cos x + \\sin x}",
+    "requiere_grafica": true,
+    "observaciones": "Expresar el denominador mediante la identidad de combinación de seno y coseno \\sqrt{2}\\sin(x + \\pi/4) o mediante la sustitución z = \\tan(x/2)."
+  },
+  {
+    "id": "SEM04_P12",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{\\sec x dx}{\\sec x + 2\\tan x - 1}",
+    "requiere_grafica": true,
+    "observaciones": "Expresar en términos de \\sin x y \\cos x multiplicando por \\cos x para obtener \\int \\frac{dx}{1 + 2\\sin x - \\cos x} y aplicar la sustitución z = \\tan(x/2)."
+  },
+  {
+    "id": "SEM04_P13",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{\\sin x dx}{1 + \\sin x + \\cos x}",
+    "requiere_grafica": true,
+    "observaciones": "Aplicar la sustitución de Weierstrass z = \\tan(x/2) para resolver la fracción racional mediante la descomposición en fracciones parciales."
+  },
+  {
+    "id": "SEM04_P14",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{\\cos x dx}{1 + \\sin x + \\cos x}",
+    "requiere_grafica": true,
+    "observaciones": "Utilizar la sustitución de Weierstrass z = \\tan(x/2) y descomponer el dividendo en fracciones parciales."
+  },
+  {
+    "id": "SEM04_P15",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{(1 - \\sin x) dx}{(1 + \\sin x)\\sin x}",
+    "requiere_grafica": true,
+    "observaciones": "Sustituir z = \\tan(x/2) o realizar la sustitución u = \\sin x tras multiplicar adecuadamente para descomponer por fracciones parciales."
+  },
+  {
+    "id": "SEM04_P16",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{dx}{1 + \\sin x + \\cos x}",
+    "requiere_grafica": true,
+    "observaciones": "Aplicar la sustitución universal de Weierstrass z = \\tan(x/2), obteniendo la integral \\int \\frac{dz}{1+z} = \\ln|1+z| + C."
+  },
+  {
+    "id": "SEM04_P17",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{dx}{5 - 4\\cos x}",
+    "requiere_grafica": true,
+    "observaciones": "Aplicar la sustitución z = \\tan(x/2), reduciendo a \\int \\frac{2dz}{1 + 9z^2} y resolviendo mediante la fórmula estándar de \\arctan."
+  },
+  {
+    "id": "SEM04_P18",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{\\sin x dx}{\\cos^2 x - \\cos x - 2}",
+    "requiere_grafica": true,
+    "observaciones": "Realizar el cambio de variable u = \\cos x (du = -\\sin x dx) y factorizar el denominador (u - 2)(u + 1) para integrar por fracciones parciales."
+  },
+  {
+    "id": "SEM04_P19",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{(1 - \\sin x)\\cos x dx}{\\sin x + \\sin^2 x}",
+    "requiere_grafica": true,
+    "observaciones": "Sustituir u = \\sin x (du = \\cos x dx) para simplificar a \\int \\frac{1 - u}{u(1 + u)} du e integrar por fracciones parciales."
+  },
+  {
+    "id": "SEM04_P20",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{\\cos^3 x dx}{2 - \\sin x}",
+    "requiere_grafica": true,
+    "observaciones": "Reescribir \\cos^3 x = (1 - \\sin^2 x)\\cos x y hacer el cambio de variable u = \\sin x para integrar una función racional."
+  },
+  {
+    "id": "SEM04_P21",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{\\cos x dx}{\\cos^2 x + 1}",
+    "requiere_grafica": true,
+    "observaciones": "Expresar \\cos^2 x = 1 - \\sin^2 x para obtener \\int \\frac{\\cos x dx}{2 - \\sin^2 x} y hacer el cambio de variable u = \\sin x."
+  },
+  {
+    "id": "SEM04_P22",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{(1 - \\cos x)\\sin x dx}{\\cos x + \\cos^2 x}",
+    "requiere_grafica": true,
+    "observaciones": "Aplicar la sustitución u = \\cos x (du = -\\sin x dx) para transformar la integral en \\int \\frac{u - 1}{u(1 + u)} du y resolver por fracciones parciales."
+  },
+  {
+    "id": "SEM04_P23",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{\\sin^3 x dx}{3 - \\cos x}",
+    "requiere_grafica": true,
+    "observaciones": "Expresar \\sin^3 x = (1 - \\cos^2 x)\\sin x y aplicar el cambio de variable u = \\cos x para integrar un polinomio dividido entre un término lineal."
+  },
+  {
+    "id": "SEM04_P24",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{2\\tan x dx}{\\tan x + 1}",
+    "requiere_grafica": true,
+    "observaciones": "Escribir \\tan x = \\frac{\\sin x}{\\cos x} para obtener \\int \\frac{2\\sin x dx}{\\sin x + \\cos x} o bien usar la sustitución z = \\tan x (dx = \\frac{dz}{1+z^2})."
+  },
+  {
+    "id": "SEM04_P25",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{dx}{4\\sin^2 x + 9\\cos^2 x}",
+    "requiere_grafica": true,
+    "observaciones": "Dividir numerador y denominador por \\cos^2 x para obtener \\int \\frac{\\sec^2 x dx}{4\\tan^2 x + 9} y realizar la sustitución u = \\tan x."
+  },
+  {
+    "id": "SEM04_P26",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{dx}{1 + \\sin^2 x}",
+    "requiere_grafica": true,
+    "observaciones": "Dividir numerador y denominador entre \\cos^2 x para reescribir como \\int \\frac{\\sec^2 x dx}{\\sec^2 x + \\tan^2 x} = \\int \\frac{\\sec^2 x dx}{1 + 2\\tan^2 x} y aplicar u = \\tan x."
+  },
+  {
+    "id": "SEM04_P27",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{dx}{1 + \\cos^2 x}",
+    "requiere_grafica": true,
+    "observaciones": "Dividir numerador y denominador entre \\cos^2 x para obtener \\int \\frac{\\sec^2 x dx}{\\sec^2 x + 1} = \\int \\frac{\\sec^2 x dx}{\\tan^2 x + 2} y resolver mediante el cambio u = \\tan x."
+  },
+  {
+    "id": "SEM04_P28",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{dx}{2\\cos x - 3\\sin x}",
+    "requiere_grafica": true,
+    "observaciones": "Aplicar la sustitución universal de Weierstrass z = \\tan(x/2) para transformar el denominador en una expresión cuadrática en z."
+  },
+  {
+    "id": "SEM04_P29",
+    "semana": 4,
+    "enunciado": "Calcular la integral: \\int \\frac{dx}{\\sin x - \\cos x + 1}",
+    "requiere_grafica": true,
+    "observaciones": "Aplicar la sustitución de Weierstrass z = \\tan(x/2) para simplificar a \\int \\frac{dz}{z + 1} = \\ln|z + 1| + C."
   }
 ]
